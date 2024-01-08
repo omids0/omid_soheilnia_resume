@@ -6,16 +6,18 @@ type ContactInfo = {
     faceBook: string;
     linkedin: string;
     twitter: string;
+    militaryServiceStatus: string;
   };
 };
 
 export const contactInfo: ContactInfo = {
   fa: {
-    phoneNumber: "",
-    emailAddress: "",
-    github: "",
+    phoneNumber: "+989354403007",
+    emailAddress: "soheilniao@gmail.com",
+    github: "https://github.com/omidS0",
     faceBook: "",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/omid-so/",
     twitter: "",
+    militaryServiceStatus: "پایان خدمت",
   },
 };

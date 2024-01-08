@@ -15,13 +15,13 @@ type PersonalInfo = {
 export const personalInfo: PersonalInfo = {
   fa: {
     photo: "",
-    firstName: "",
-    lastName: "",
-    bornYear: "",
-    country: "",
-    city: "",
-    birthDate: "",
+    firstName: "امید",
+    lastName: "سهیل نیا",
+    bornYear: "1372",
+    country: "ایران",
+    city: "تهران",
+    birthDate: "1994-02-20",
     blood: "",
-    hand: "",
+    hand: "r",
   },
 };

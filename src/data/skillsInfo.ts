@@ -1,15 +1,85 @@
+export type SkillsList =
+  | "GitLab"
+  | "GitHub"
+  | "Git"
+  | "GitFlow"
+  | "TeamWork"
+  | "ReactJs"
+  | "NextJS"
+  | "Figma"
+  | "Material-UI"
+  | "Redux"
+  | "RTK"
+  | "Jira"
+  | "Scrum"
+  | "GraphQL"
+  | "Ant-Design"
+  | "Debugging"
+  | "REST APIs"
+  | "Problem Solving"
+  | "JavaScript"
+  | "TypeScript"
+  | "ReactNative"
+  | "React-query"
+  | "Axios"
+  | "TailwindCss"
+  | "SASS"
+  | "BootStrap"
+  | "StoryBook"
+  | "CSS"
+  | "MongoDB"
+  | "B2B"
+  | "Responsive Web Page"
+  | "HTML"
+  | "Postman API";
+
 type Skills = {
   fa: {
-    ui: string[];
-    tech: string[];
-    other: string[];
+    ui: SkillsList[];
+    tech: SkillsList[];
+    other: SkillsList[];
   };
 };
 
-const skills: Skills = {
+export const skills: Skills = {
   fa: {
-    ui: [""],
-    tech: [""],
-    other: [""],
+    ui: [
+      "Material-UI",
+      "Ant-Design",
+      "CSS",
+      "Figma",
+      "BootStrap",
+      "TailwindCss",
+      "SASS",
+    ],
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "ReactJs",
+      "NextJS",
+      "ReactNative",
+      "TypeScript",
+      "Axios",
+      "MongoDB",
+      "GraphQL",
+      "Postman API",
+      "Redux",
+      "React-query",
+      "Git",
+      "RTK",
+      "MongoDB",
+    ],
+    other: [
+      "StoryBook",
+      "Jira",
+      "REST APIs",
+      "Debugging",
+      "GitFlow",
+      "GitHub",
+      "GitLab",
+      "TeamWork",
+      "Scrum",
+    ],
   },
 };
