@@ -3,7 +3,7 @@
 @tailwind utilities;
 @font-face {
   font-family: "iransans";
-  src: url("../data/FontsFree-Net-ir_sans.ttf") format("truetype");
+  src: url("../utils/FontsFree-Net-ir_sans.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
