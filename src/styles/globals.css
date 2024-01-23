@@ -1,8 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "iransans";
+  src: url("../data/FontsFree-Net-ir_sans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
+  font-family: "iransans", "times new roman", "sans-serif", "arial";
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
