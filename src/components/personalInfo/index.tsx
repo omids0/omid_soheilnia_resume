@@ -1,20 +1,9 @@
 import { type FC } from "react";
-import { personalInfo } from "../data/personalInfo";
-import { contactInfo } from "../data/contactInfo";
+import { personalInfo } from "../../data/personalInfo";
+import { contactInfo } from "../../data/contactInfo";
 import Image from "next/image";
 import { skills } from "@/data/skillsInfo";
-
-const PersonalInfoDetails: FC<{ title: string; description: string }> = ({
-  title,
-  description,
-}) => {
-  return (
-    <div className="mb-4">
-      <p className="font-bold text-sm mb-1">{title}</p>
-      <p className="text-sm">{description}</p>
-    </div>
-  );
-};
+import PersonalInfoDetails from "./personalInfoDetails";
 
 const PersonalInfo: FC = () => {
   return (
