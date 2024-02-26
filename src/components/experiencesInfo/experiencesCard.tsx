@@ -23,18 +23,21 @@ const ExperiencesCard: FC<Props> = ({ data }) => {
         }}
       />
       <div>
-        <p className="font-bold text-gray-900">{data.myPosition}</p>
-        <p className="text-sm text-gray-800">{`${data.name} (${data.scope}) - ${data.employmentType}`}</p>
-        <div className="flex gap-2 text-gray-500">
-          <p className="text-sm text-gray-400">
-            {`${data.city}, ${data.country} . ${data.locationType}`}
-          </p>
-          {"/"}
-          <p className="text-sm text-gray-400">{`Jun - Mar - 5Mon`}</p>
+        <div className="flex justify-between min-w-[40rem]">
+          <div className="flex flex-col">
+            <p className="font-bold text-gray-900">{data.myPosition}</p>
+            <p className="text-sm text-gray-800">{`${data.name} (${data.scope}) - ${data.employmentType}`}</p>
+          </div>
+          <div className="flex gap-2 text-gray-500">
+            <p className="text-sm text-gray-400">
+              {`${data.city}, ${data.country} . ${data.locationType}`}
+            </p>
+            {"/"}
+            <p className="text-sm text-gray-400">{`Jun - Mar - 5Mon`}</p>
+          </div>
         </div>
-
         <div className="mt-1">
-          <p className="font-bold text-sm text-gray-700">Worked On:</p>
+          <p className="font-bold text-xs text-gray-700">Worked On:</p>
           <div className="flex gap-2 flex-wrap max-w-[40rem] mt-1">
             {data.skills.map((item, index) => (
               <p key={item} className="text-xs text-gray-600">
