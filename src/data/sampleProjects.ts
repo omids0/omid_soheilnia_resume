@@ -1,4 +1,4 @@
-type projectDetails = {
+export type ProjectDetails = {
   title: string;
   description: string;
   skills: string;
@@ -8,7 +8,7 @@ type projectDetails = {
 };
 
 type SampleProjects = {
-  fa: projectDetails[];
+  fa: ProjectDetails[];
 };
 
 const sampleProjects: SampleProjects = {
