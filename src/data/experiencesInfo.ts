@@ -25,6 +25,7 @@ export type CompanyInfo = {
   skills: SkillsList[];
   description: string;
   scope: string;
+  workedOn: string[];
 };
 
 type ExperiencesInfo = {
@@ -35,6 +36,7 @@ export const experiencesInfo: ExperiencesInfo = {
   fa: [
     {
       name: "Asiatech Co",
+      workedOn: ["Admin Panel"],
       myPosition: "Front-End Developer",
       logo: "/asiatech.jfif",
       start: ["2020", "1", "1"],
@@ -60,6 +62,11 @@ export const experiencesInfo: ExperiencesInfo = {
     },
     {
       name: "Pelazio",
+      workedOn: [
+        "Supplier Panel",
+        "Admin Panel (Base on logistic)",
+        "Warehouse App (Base on logistic)",
+      ],
       logo: "/pelazio.jfif",
       start: ["2022", "6", "1"],
       end: ["2023", "4", "1"],
@@ -92,10 +99,11 @@ export const experiencesInfo: ExperiencesInfo = {
     },
     {
       name: "PSPexpress",
+      workedOn: ["Admin Panel"],
       myPosition: "Front-End Developer",
       logo: "/psp.jfif",
       start: ["2023", "1", "1"],
-      end: ["2023", "8", "1"],
+      end: ["2023", "9", "1"],
       description: "",
       scope: "Transportation",
       skills: [
@@ -122,6 +130,10 @@ export const experiencesInfo: ExperiencesInfo = {
     },
     {
       name: "Entekhab Electronic Group",
+      workedOn: [
+        "Admin Panel (Base on logistic)",
+        "Supplier Panel (Base on logistic)",
+      ],
       myPosition: "Front-End Developer",
       logo: "/entekhab.jfif",
       start: ["2023", "09", "01"],
