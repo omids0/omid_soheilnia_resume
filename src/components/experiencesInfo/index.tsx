@@ -5,8 +5,8 @@ import { experiencesInfo } from "@/data/experiencesInfo";
 const ExperiencesInfo: FC = () => {
   return (
     <div>
-      <p className="font-bold text-base mb-4">تجربیات</p>
-      <div className="flex flex-col gap-2">
+      <p className="font-bold text-[.9rem] mb-4">تجربیات</p>
+      <div className="flex flex-col gap-1">
         {experiencesInfo.fa
           .map((item) => <ExperiencesCard key={item.name} data={item} />)
           .reverse()}

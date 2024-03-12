@@ -56,6 +56,17 @@ const ExperiencesCard: FC<Props> = ({ data }) => {
         <div className="mt-1">
           <p className="font-bold text-xs text-gray-700">Worked On:</p>
           <div className="flex gap-2 flex-wrap max-w-[36rem] mt-1">
+            {data.workedOn.map((item, index) => (
+              <p key={item} className="text-xs text-gray-600">
+                {index > 0 && "-"}
+                {item}
+              </p>
+            ))}
+          </div>
+        </div>
+        <div className="mt-1">
+          <p className="font-bold text-xs text-gray-700">Skills:</p>
+          <div className="flex gap-2 flex-wrap max-w-[36rem] mt-1">
             {data.skills.map((item, index) => (
               <p key={item} className="text-xs text-gray-600">
                 {index > 0 && "-"}
