@@ -2,12 +2,13 @@ import type { CompanyInfo } from "@/data/experiencesInfo";
 import moment from "moment";
 import Image from "next/image";
 import { type FC } from "react";
+import Companies from "./companies";
 
 type Props = {
   data: CompanyInfo;
 };
 
-const ExperiencesCard: FC<Props> = ({ data }) => {
+const HoldingExperiencesCard: FC<Props> = ({ data }) => {
   const startDate = moment(data.start.join("-"));
   const endDate = moment(data.end?.join("-"));
 
@@ -35,7 +36,7 @@ const ExperiencesCard: FC<Props> = ({ data }) => {
         <div className="flex justify-between w-[36rem]">
           <div className="flex flex-col">
             <p className="font-bold text-gray-900">{data.myPosition}</p>
-            <p className="text-sm text-gray-800">{`${data.name} (${data.scope}) - ${data.employmentType}`}</p>
+            <p className="text-sm text-gray-800">{`${data.name}`}</p>
           </div>
           <div className="flex-col text-gray-500">
             <p className="text-sm text-gray-400 ltr">
@@ -51,31 +52,14 @@ const ExperiencesCard: FC<Props> = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="mt-1">
-          <p className="font-bold text-xs text-gray-700">Worked On:</p>
-          <div className="flex gap-2 flex-wrap max-w-[36rem] mt-1">
-            {data.workedOn.map((item, index) => (
-              <p key={item} className="text-xs text-gray-600">
-                {index > 0 && "-"}
-                {item}
-              </p>
-            ))}
-          </div>
+        <div className="gap-1 flex flex-col">
+          {data.holdingCompanies?.map((item) => (
+            <Companies key={item.name} data={item} />
+          ))}
         </div>
-        {/* <div className="mt-1">
-          <p className="font-bold text-xs text-gray-700">Skills:</p>
-          <div className="flex gap-2 flex-wrap max-w-[36rem] mt-1">
-            {data.skills.map((item, index) => (
-              <p key={item} className="text-xs text-gray-600">
-                {index > 0 && "-"}
-                {item}
-              </p>
-            ))}
-          </div>
-        </div> */}
       </div>
     </div>
   );
 };
 
-export default ExperiencesCard;
+export default HoldingExperiencesCard;
