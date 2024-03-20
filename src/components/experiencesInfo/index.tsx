@@ -1,4 +1,4 @@
-import { FC } from "react";
+import type { FC } from "react";
 import ExperiencesCard from "./experiencesCard";
 import { experiencesInfo } from "@/data/experiencesInfo";
 import HoldingExperiencesCard from "./holdingExperiencesCard";
