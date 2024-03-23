@@ -52,7 +52,7 @@ const HoldingExperiencesCard: FC<Props> = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="gap-1 flex flex-col">
+        <div className="gap-1 flex flex-col mt-2">
           {data.holdingCompanies?.map((item) => (
             <Companies key={item.name} data={item} />
           ))}

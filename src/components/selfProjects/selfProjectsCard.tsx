@@ -8,9 +8,9 @@ type Props = {
 
 const SelfProjectsCard: FC<Props> = ({ data }) => {
   return (
-    <div className="bg-gray-50 p-4 rounded-lg flex flex-col gap-2 max-w-[41rem]">
+    <div className="bg-gray-50 p-4 rounded-lg flex flex-col gap-2 max-w-[41rem] shadow-md">
       <p className="font-bold text-[.9rem] text-gray-900">{data.title}</p>
-      <p className="text-[.75rem] text-gray-600">{data.description}</p>
+      <p className="text-[.8rem] text-gray-600">{data.description}</p>
       {data.hint && <p className="text-sm text-gray-600">* {data.hint}</p>}
       <p className="text-[.8rem] font-bold">Skills:</p>
       <div className="flex gap-2 text-[.7rem] text-gray-400 ltr">
@@ -27,13 +27,21 @@ const SelfProjectsCard: FC<Props> = ({ data }) => {
             height={20}
             loading="lazy"
           />
-          <a className="text-[.8rem]" href={data.github} target="_blank">
+          <a
+            className="text-[.8rem] text-blue-500"
+            href={data.github}
+            target="_blank"
+          >
             {data.github}
           </a>
         </div>
         |
         <div className="flex gap-2 items-center">
-          <a className="text-[.8rem]" href={data.live} target="_blank">
+          <a
+            className="text-[.8rem] text-blue-500"
+            href={data.live}
+            target="_blank"
+          >
             {data.live}
           </a>
           <Image

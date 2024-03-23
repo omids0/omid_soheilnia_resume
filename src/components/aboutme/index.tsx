@@ -4,7 +4,7 @@ const AboutMe: FC = () => {
   return (
     <div className="mb-4">
       <p className="font-bold text-[1rem] mb-4">About Me</p>
-      <div className="text-[.8rem] text-gray-800">
+      <div className="text-[.9rem] text-gray-800">
         <p>
           Front-End Developer with a passion for crafting user-centric
           interfaces.
