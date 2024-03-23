@@ -12,6 +12,8 @@ type EmploymentType =
 
 type LocationType = "On-site" | "Hybrid" | "Remote";
 
+export type HoldingCompanies = Pick<CompanyInfo, "name" | "workedOn" | "logo">;
+
 export type CompanyInfo = {
   name: string;
   myPosition: string;
@@ -26,6 +28,8 @@ export type CompanyInfo = {
   description: string;
   scope: string;
   workedOn: string[];
+  isHolding: boolean;
+  holdingCompanies?: HoldingCompanies[];
 };
 
 type ExperiencesInfo = {
@@ -36,6 +40,7 @@ export const experiencesInfo: ExperiencesInfo = {
   fa: [
     {
       name: "Asiatech Co",
+      isHolding: false,
       workedOn: ["Admin Panel"],
       myPosition: "Front-End Developer",
       logo: "/asiatech.jfif",
@@ -60,83 +65,49 @@ export const experiencesInfo: ExperiencesInfo = {
       city: "Tehran",
       scope: "ITC",
     },
+    // TODO
     {
-      name: "Pelazio",
-      workedOn: [
-        "Supplier Panel",
-        "Admin Panel (Base on logistic)",
-        "Warehouse App (Base on logistic)",
-      ],
-      logo: "/pelazio.jfif",
-      start: ["2022", "6", "1"],
-      end: ["2023", "4", "1"],
-      description: "",
-      scope: "Online-Shop",
-      skills: [
-        "ReactJs",
-        "NextJS",
-        "ReactNative",
-        "JavaScript",
-        "TypeScript",
-        "Axios",
-        "Redux",
-        "Figma",
-        "Ant-Design",
-        "Material-UI",
-        "Jira",
-        "TeamWork",
-        "GitLab",
-        "Debugging",
-        "REST APIs",
-        "Problem Solving",
-        "Postman API",
-      ],
-      city: "Tehran",
-      country: "Iran",
-      employmentType: "Full-time",
-      locationType: "On-site",
-      myPosition: "Front-End Developer",
-    },
-    {
-      name: "PSPexpress",
-      workedOn: ["Admin Panel"],
-      myPosition: "Front-End Developer",
-      logo: "/psp.jfif",
-      start: ["2023", "1", "1"],
+      name: "Mithaq Sadra Holding",
+      isHolding: true,
+      workedOn: [],
+      logo: "/misagheSadra.jpg",
+      start: ["2022", "2", "1"],
       end: ["2023", "9", "1"],
       description: "",
-      scope: "Transportation",
-      skills: [
-        "NextJS",
-        "React-query",
-        "TypeScript",
-        "RTK",
-        "GitLab",
-        "Figma",
-        "TailwindCss",
-        "Jira",
-        "StoryBook",
-        "TeamWork",
-        "Debugging",
-        "REST APIs",
-        "Problem Solving",
-        "JavaScript",
-        "Postman API",
-      ],
+      scope: "",
+      skills: [],
       city: "Tehran",
       country: "Iran",
       employmentType: "Full-time",
       locationType: "On-site",
+      myPosition: "Front-End Developer",
+      holdingCompanies: [
+        {
+          name: "Pelazio",
+          workedOn: [
+            "Supplier Panel",
+            "Admin Panel (Base on logistic)",
+            "Warehouse App (Base on logistic)",
+          ],
+          logo: "/pelazio.jfif",
+        },
+        {
+          name: "PSPexpress",
+          workedOn: ["Admin Panel"],
+          logo: "/psp.jfif",
+        },
+      ],
     },
     {
       name: "Entekhab Electronic Group",
+      isHolding: false,
       workedOn: [
         "Admin Panel (Base on logistic)",
         "Supplier Panel (Base on logistic)",
       ],
       myPosition: "Front-End Developer",
       logo: "/entekhab.jfif",
-      start: ["2023", "09", "01"],
+      start: ["2023", "8", "01"],
       end: null,
       description: "",
       scope: "AI-Shop",
