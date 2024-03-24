@@ -12,7 +12,10 @@ type EmploymentType =
 
 type LocationType = "On-site" | "Hybrid" | "Remote";
 
-export type HoldingCompanies = Pick<CompanyInfo, "name" | "workedOn" | "logo">;
+export type HoldingCompanies = Pick<
+  CompanyInfo,
+  "name" | "workedOn" | "logo" | "achievements"
+>;
 
 export type CompanyInfo = {
   name: string;
@@ -30,6 +33,7 @@ export type CompanyInfo = {
   workedOn: string[];
   isHolding: boolean;
   holdingCompanies?: HoldingCompanies[];
+  achievements: string;
 };
 
 type ExperiencesInfo = {
@@ -40,6 +44,9 @@ export const experiencesInfo: ExperiencesInfo = {
   fa: [
     {
       name: "Asiatech Co",
+      achievements: `Successfully resolved various bugs and issues, enhancing user experience and productivity.
+      Implemented new features and functionalities based on user feedback and business requirements.
+      Collaborated with cross-functional teams to ensure seamless integration and optimal performance.`,
       isHolding: false,
       workedOn: ["Admin Panel"],
       myPosition: "Front-End Developer",
@@ -68,6 +75,7 @@ export const experiencesInfo: ExperiencesInfo = {
     // TODO
     {
       name: "Mithaq Sadra Holding",
+      achievements: "",
       isHolding: true,
       workedOn: [],
       logo: "/misagheSadra.jpg",
@@ -84,6 +92,11 @@ export const experiencesInfo: ExperiencesInfo = {
       holdingCompanies: [
         {
           name: "Pelazio",
+          achievements: `
+          -Successfully defined and implemented new features, enhancing functionality and user experience.
+          -Resolved various bugs and issues, ensuring smooth operation and high performance.
+          Collaborated with cross-functional teams to gather requirements and deliver high-quality solutions.
+          `,
           workedOn: [
             "Supplier Panel",
             "Admin Panel (Base on logistic)",
@@ -93,6 +106,9 @@ export const experiencesInfo: ExperiencesInfo = {
         },
         {
           name: "PSPexpress",
+          achievements: `Delivered the initial version of the project with X key features on time and within budget, despite a tight deadline and limited resources.
+          Collaborated effectively with a team of 4 front-end developers to overcome challenges and achieve project goals.
+          This project was a great success for our team and resulted in high customer satisfaction.`,
           workedOn: ["Admin Panel"],
           logo: "/psp.jfif",
         },
@@ -100,6 +116,9 @@ export const experiencesInfo: ExperiencesInfo = {
     },
     {
       name: "Entekhab Electronic Group",
+      achievements: `Participation in the development and completion of the My Choice website and internal panels.
+      Completing tasks on time and with high quality.
+      Contributing to project progress and achieving team goals.`,
       isHolding: false,
       workedOn: [
         "Admin Panel (Base on logistic)",

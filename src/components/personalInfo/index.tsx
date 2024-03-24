@@ -1,4 +1,4 @@
-import { type FC } from "react";
+import { Fragment, type FC } from "react";
 import { personalInfo } from "../../data/personalInfo";
 import { contactInfo } from "../../data/contactInfo";
 import Image from "next/image";
@@ -36,10 +36,6 @@ const PersonalInfo: FC = () => {
           description={personalInfo.en.education}
         />
         <PersonalInfoDetails
-          title="Born"
-          description={personalInfo.en.bornYear}
-        />
-        <PersonalInfoDetails
           title="Military service status"
           description={personalInfo.en.militaryServiceStatus}
         />
@@ -50,7 +46,7 @@ const PersonalInfo: FC = () => {
       </div>
       <div className="flex flex-col text-gray-700 mt-5">
         <p className="font-bold mb-1 text-sm">Skills</p>
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-col gap-4">
           <div>
             {skills.fa.tech.map((item) => (
               <p className="text-[.8rem]" key={item}>{`- ${item}`}</p>
@@ -61,10 +57,12 @@ const PersonalInfo: FC = () => {
               <p className="text-[.8rem]" key={item}>{`- ${item}`}</p>
             ))}
           </div>
+          <div>
+            {skills.fa.other.map((item) => (
+              <p className="text-[.8rem]" key={item}>{`- ${item}`}</p>
+            ))}
+          </div>
         </div>
-        {skills.fa.other.map((item) => (
-          <p className="text-[.8rem]" key={item}>{`- ${item}`}</p>
-        ))}
       </div>
     </div>
   );

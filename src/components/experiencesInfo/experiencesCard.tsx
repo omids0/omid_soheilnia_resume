@@ -19,7 +19,7 @@ const ExperiencesCard: FC<Props> = ({ data }) => {
   const endMonth = data.end && moment(data.end[1], "M").format("MMM");
 
   return (
-    <div className="bg-gray-50 p-4 rounded-lg flex gap-2 max-w-[41rem] shadow-md">
+    <div className="p-2 flex gap-2 max-w-[41rem]">
       <Image
         src={data.logo}
         alt="companyIcon"
@@ -61,6 +61,10 @@ const ExperiencesCard: FC<Props> = ({ data }) => {
               </p>
             ))}
           </div>
+        </div>
+        <div className="mt-2">
+          <p className="font-bold text-xs text-gray-700">Achievements:</p>
+          <p className="text-xs text-gray-600">{data.achievements}</p>
         </div>
         {/* <div className="mt-1">
           <p className="font-bold text-xs text-gray-700">Skills:</p>

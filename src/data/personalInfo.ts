@@ -51,8 +51,8 @@ export const personalInfo: PersonalInfo = {
     blood: "",
     hand: "r",
     job: "Front-End Developer",
-    militaryServiceStatus: "Done",
-    education: "Bachelor of Information Technology (IT)",
+    militaryServiceStatus: "Complited",
+    education: "B.S. in IT from IAU, Parand Branch (2012 - 2016)",
     aboutMe: `Front-End Developer with a passion for crafting user-centric interfaces.
 
     Driven by a deep understanding of web technologies and a commitment to accessibility, I strive to create engaging and intuitive user experiences. With a keen eye for detail and a focus on performance, I am dedicated to delivering high-quality code that meets the needs of both users and businesses.
