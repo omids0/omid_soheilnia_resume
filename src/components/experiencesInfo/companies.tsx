@@ -38,6 +38,10 @@ const Companies: FC<Props> = ({ data }) => {
             ))}
           </div>
         </div>
+        <div className="mt-2">
+          <p className="font-bold text-xs text-gray-700">Achievements:</p>
+          <p className="text-xs text-gray-600">{data.achievements}</p>
+        </div>
         {/* <div className="mt-1">
           <p className="font-bold text-xs text-gray-700">Skills:</p>
           <div className="flex gap-2 flex-wrap max-w-[36rem] mt-1">
