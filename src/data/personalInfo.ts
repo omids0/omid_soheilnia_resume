@@ -51,7 +51,7 @@ export const personalInfo: PersonalInfo = {
     blood: "",
     hand: "r",
     job: "Front-End Developer",
-    militaryServiceStatus: "Complited",
+    militaryServiceStatus: "Completed",
     education: "B.S. in IT from IAU, Parand Branch (2012 - 2016)",
     aboutMe: `Front-End Developer with a passion for crafting user-centric interfaces.
 

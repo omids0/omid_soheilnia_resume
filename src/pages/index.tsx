@@ -12,7 +12,7 @@ export default function Home() {
           <ExperiencesInfo />
           <SelfProjects />
         </div>
-        <div className="w-[16rem] bg-cyan-100 p-4  rounded-md">
+        <div className="w-[16rem] bg-green-100 p-4  rounded-md">
           <PersonalInfo />
         </div>
       </div>

@@ -23,7 +23,7 @@ export const sampleProjects: SampleProjects = {
       hint: "",
     },
     {
-      title: "Staff Resturant Menu",
+      title: "Staff Restaurant Menu",
       description:
         "This project is designed for the use of employees inside the restaurant. It does not have an interesting appearance, but it has made the working conditions easier. The access level is included in this project.",
       hint: "username:10001;   password:admin",
