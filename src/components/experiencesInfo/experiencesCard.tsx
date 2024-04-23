@@ -1,4 +1,5 @@
 import type { CompanyInfo } from "@/data/experiencesInfo";
+import { handleImagesUrl } from "@/utils/functions";
 import moment from "moment";
 import Image from "next/image";
 import { type FC } from "react";
@@ -21,7 +22,7 @@ const ExperiencesCard: FC<Props> = ({ data }) => {
   return (
     <div className="p-2 flex gap-2 max-w-[41rem]">
       <Image
-        src={data.logo}
+        src={handleImagesUrl(data.logo)}
         alt="companyIcon"
         width={40}
         height={40}

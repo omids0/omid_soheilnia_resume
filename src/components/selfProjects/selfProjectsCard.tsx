@@ -1,4 +1,5 @@
 import type { ProjectDetails } from "@/data/sampleProjects";
+import { handleImagesUrl } from "@/utils/functions";
 import Image from "next/image";
 import type { FC } from "react";
 
@@ -21,7 +22,7 @@ const SelfProjectsCard: FC<Props> = ({ data }) => {
       <div className="flex justify-between">
         <div className="flex gap-2 items-center">
           <Image
-            src="/github.png"
+            src={handleImagesUrl("github.png")}
             alt="companyIcon"
             width={20}
             height={20}
@@ -45,7 +46,7 @@ const SelfProjectsCard: FC<Props> = ({ data }) => {
             {data.live}
           </a>
           <Image
-            src="/internet.png"
+            src={handleImagesUrl("internet.png")}
             alt="companyIcon"
             width={20}
             height={20}

@@ -1,4 +1,5 @@
 import type { HoldingCompanies } from "@/data/experiencesInfo";
+import { handleImagesUrl } from "@/utils/functions";
 import Image from "next/image";
 import { type FC } from "react";
 
@@ -12,7 +13,7 @@ const Companies: FC<Props> = ({ data }) => {
   return (
     <div className="bg-white p-2 rounded-r-md flex gap-2 border border-l-2 border-l-blue-500">
       <Image
-        src={isProd ? `/omid_soheilnia_resume/${data.logo}` : `/${data.logo}`}
+        src={handleImagesUrl(data.logo)}
         alt="companyIcon"
         width={30}
         height={30}
