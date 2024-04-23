@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <div className="flex items-center">
       <Head>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <title>Omid SoheilNia Resume</title>
         <link rel="icon" href={handleImagesUrl("tab_icon.png")} sizes="any" />
       </Head>
