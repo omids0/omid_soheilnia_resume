@@ -1,5 +1,4 @@
-"use client";
-import type { Metadata } from "next";
+import { Metadata } from "next";
 // ... other imports
 
 export const metadata: Metadata = {
