@@ -1,7 +1,3 @@
-enum Grads {
-  University = "university",
-}
-
 type GradDetails = {
   field: string;
   start: [string, string, string];
@@ -11,7 +7,7 @@ type GradDetails = {
 };
 
 type EducationInfo = {
-  fa: Record<Grads, GradDetails>;
+  fa: Record<string, GradDetails>;
 };
 
 export const educationInfo: EducationInfo = {

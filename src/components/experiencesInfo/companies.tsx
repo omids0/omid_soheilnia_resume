@@ -1,5 +1,5 @@
-import type { HoldingCompanies } from "@/data/experiencesInfo";
-import { handleImagesUrl } from "@/utils/functions";
+import type { HoldingCompanies } from "src/data/experiencesInfo";
+import { handleImagesUrl } from "src/utils/functions";
 import Image from "next/image";
 import { type FC } from "react";
 
@@ -8,8 +8,6 @@ type Props = {
 };
 
 const Companies: FC<Props> = ({ data }) => {
-  const isProd = process.env.NODE_ENV === "production";
-
   return (
     <div className="bg-white p-2 rounded-r-md flex gap-2 border border-l-2 border-l-blue-500">
       <Image

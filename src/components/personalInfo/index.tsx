@@ -1,8 +1,7 @@
-import { Fragment, type FC } from "react";
+import { type FC } from "react";
 import { personalInfo } from "../../data/personalInfo";
 import { contactInfo } from "../../data/contactInfo";
-import Image from "next/image";
-import { skills } from "@/data/skillsInfo";
+import { skills } from "src/data/skillsInfo";
 import PersonalInfoDetails from "./personalInfoDetails";
 
 const PersonalInfo: FC = () => {

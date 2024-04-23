@@ -1,5 +1,5 @@
-import type { ProjectDetails } from "@/data/sampleProjects";
-import { handleImagesUrl } from "@/utils/functions";
+import type { ProjectDetails } from "src/data/sampleProjects";
+import { handleImagesUrl } from "src/utils/functions";
 import Image from "next/image";
 import type { FC } from "react";
 

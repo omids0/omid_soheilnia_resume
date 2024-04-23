@@ -1,6 +1,6 @@
 import { type FC } from "react";
 import SelfProjectsCard from "./selfProjectsCard";
-import { sampleProjects } from "@/data/sampleProjects";
+import { sampleProjects } from "src/data/sampleProjects";
 
 const SelfProjects: FC = () => {
   return (

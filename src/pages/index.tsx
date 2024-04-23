@@ -1,9 +1,9 @@
-import AboutMe from "@/components/aboutme";
-import ExperiencesInfo from "@/components/experiencesInfo";
-import PersonalInfo from "@/components/personalInfo";
-import SelfProjects from "@/components/selfProjects";
-import { handleImagesUrl } from "@/utils/functions";
+import AboutMe from "src/components/aboutme";
+import PersonalInfo from "src/components/personalInfo";
+import SelfProjects from "src/components/selfProjects";
+import { handleImagesUrl } from "src/utils/functions";
 import Head from "next/head";
+import ExperiencesInfo from "src/components/experiencesInfo";
 
 export default function Home() {
   return (

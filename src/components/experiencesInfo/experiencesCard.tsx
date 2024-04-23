@@ -1,5 +1,5 @@
-import type { CompanyInfo } from "@/data/experiencesInfo";
-import { handleImagesUrl } from "@/utils/functions";
+import type { CompanyInfo } from "src/data/experiencesInfo";
+import { handleImagesUrl } from "src/utils/functions";
 import moment from "moment";
 import Image from "next/image";
 import { type FC } from "react";
@@ -10,13 +10,17 @@ type Props = {
 
 const ExperiencesCard: FC<Props> = ({ data }) => {
   const startDate = moment(data.start.join("-"));
+
   const endDate = moment(data.end?.join("-"));
 
   const days = endDate.diff(startDate, "days");
+
   const years = Math.floor(days / 365);
+
   const months = Math.floor((days % 365) / 30);
 
   const startMonth = moment(data.start[1], "M").format("MMM");
+
   const endMonth = data.end && moment(data.end[1], "M").format("MMM");
 
   return (

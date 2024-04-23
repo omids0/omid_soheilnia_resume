@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import ExperiencesCard from "./experiencesCard";
-import { experiencesInfo } from "@/data/experiencesInfo";
+import { experiencesInfo } from "src/data/experiencesInfo";
 import HoldingExperiencesCard from "./holdingExperiencesCard";
 
 const ExperiencesInfo: FC = () => {
