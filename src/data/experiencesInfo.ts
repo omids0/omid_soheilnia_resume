@@ -102,7 +102,7 @@ export const experiencesInfo: ExperiencesInfo = {
             "Admin Panel (Base on logistic)",
             "Warehouse App (Base on logistic)",
           ],
-          logo: "/pelazio.jfif",
+          logo: "pelazio.jfif",
         },
         {
           name: "PSPexpress",
@@ -110,7 +110,7 @@ export const experiencesInfo: ExperiencesInfo = {
           Collaborated effectively with a team of 4 front-end developers to overcome challenges and achieve project goals.
           This project was a great success for our team and resulted in high customer satisfaction.`,
           workedOn: ["Admin Panel"],
-          logo: "/psp.jfif",
+          logo: "psp.jfif",
         },
       ],
     },

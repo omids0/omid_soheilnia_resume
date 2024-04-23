@@ -1,5 +1,4 @@
 import type { HoldingCompanies } from "@/data/experiencesInfo";
-import moment from "moment";
 import Image from "next/image";
 import { type FC } from "react";
 
@@ -8,10 +7,12 @@ type Props = {
 };
 
 const Companies: FC<Props> = ({ data }) => {
+  const isProd = process.env.NODE_ENV === "production";
+
   return (
     <div className="bg-white p-2 rounded-r-md flex gap-2 border border-l-2 border-l-blue-500">
       <Image
-        src={data.logo}
+        src={isProd ? `/omid_soheilnia_resume/${data.logo}` : `/${data.logo}`}
         alt="companyIcon"
         width={30}
         height={30}
