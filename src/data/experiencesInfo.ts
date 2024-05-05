@@ -52,7 +52,7 @@ export const experiencesInfo: ExperiencesInfo = {
       myPosition: "Front-End Developer",
       logo: "asiatech.jfif",
       start: ["2020", "1", "1"],
-      end: ["2021", "10", "1"],
+      end: ["2021", "9", "1"],
       description: "",
       skills: [
         "ReactJs",
@@ -72,15 +72,14 @@ export const experiencesInfo: ExperiencesInfo = {
       city: "Tehran",
       scope: "ITC",
     },
-    // TODO
     {
       name: "Mithaq Sadra Holding",
       achievements: "",
       isHolding: true,
       workedOn: [],
       logo: "misagheSadra.jpg",
-      start: ["2022", "2", "1"],
-      end: ["2023", "9", "1"],
+      start: ["2022", "5", "1"],
+      end: ["2023", "8", "1"],
       description: "",
       scope: "",
       skills: [],

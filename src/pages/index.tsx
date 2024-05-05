@@ -1,9 +1,10 @@
+import Head from "next/head";
+
 import AboutMe from "src/components/aboutme";
+import ExperiencesInfo from "src/components/experiencesInfo";
 import PersonalInfo from "src/components/personalInfo";
 import SelfProjects from "src/components/selfProjects";
 import { handleImagesUrl } from "src/utils/functions";
-import Head from "next/head";
-import ExperiencesInfo from "src/components/experiencesInfo";
 
 export default function Home() {
   return (
