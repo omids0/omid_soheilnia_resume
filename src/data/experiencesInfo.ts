@@ -90,6 +90,14 @@ export const experiencesInfo: ExperiencesInfo = {
       myPosition: "Front-End Developer",
       holdingCompanies: [
         {
+          name: "PSPexpress",
+          achievements: `Delivered the initial version of the project with X key features on time and within budget, despite a tight deadline and limited resources.
+          Collaborated effectively with a team of 4 front-end developers to overcome challenges and achieve project goals.
+          This project was a great success for our team and resulted in high customer satisfaction.`,
+          workedOn: ["Admin Panel"],
+          logo: "psp.jfif",
+        },
+        {
           name: "Pelazio",
           achievements: `
           -Successfully defined and implemented new features, enhancing functionality and user experience.
@@ -103,22 +111,12 @@ export const experiencesInfo: ExperiencesInfo = {
           ],
           logo: "pelazio.jfif",
         },
-        {
-          name: "PSPexpress",
-          achievements: `Delivered the initial version of the project with X key features on time and within budget, despite a tight deadline and limited resources.
-          Collaborated effectively with a team of 4 front-end developers to overcome challenges and achieve project goals.
-          This project was a great success for our team and resulted in high customer satisfaction.`,
-          workedOn: ["Admin Panel"],
-          logo: "psp.jfif",
-        },
       ],
     },
     {
       name: "Entekhab Electronic Group",
-      achievements: `Participation in the development and completion of the My Choice website and internal panels.
-      Completing tasks on time and with high quality.
-      Contributing to project progress and achieving team goals.`,
-      isHolding: false,
+      achievements: "",
+      isHolding: true,
       workedOn: [
         "Admin Panel (Base on logistic)",
         "Supplier Panel (Base on logistic)",
@@ -128,7 +126,7 @@ export const experiencesInfo: ExperiencesInfo = {
       start: ["2023", "9", "01"],
       end: null,
       description: "",
-      scope: "AI-Shop",
+      scope: "",
       skills: [
         "ReactJs",
         "RTK",
@@ -150,6 +148,25 @@ export const experiencesInfo: ExperiencesInfo = {
       country: "Iran",
       employmentType: "Full-time",
       locationType: "On-site",
+      holdingCompanies: [
+        {
+          name: "GeoMarketing",
+          achievements: `Working on pure js and css base on arcGIS esri, This work experience was very interesting and excellent for me because by adding new features to this system, it made it easier for users and I got to know a new document that maybe rarely anyone wants to work with arcgis.`,
+          logo: "arcgis.jpg",
+          workedOn: ["arcGIS Maps SDK for JavaScript", "esri"],
+        },
+        {
+          name: "EntekhabeMan.com",
+          achievements: `Participation in the development and completion of the 'EntekhabeMan' website and internal panels.
+            Completing tasks on time and with high quality.
+            Contributing to project progress and achieving team goals.`,
+          logo: "entekhabeman.jpg",
+          workedOn: [
+            "Admin Panel (Base on logistic)",
+            "Supplier Panel (Base on logistic)",
+          ],
+        },
+      ],
     },
   ],
 };
