@@ -6,16 +6,31 @@ import PersonalInfoDetails from "./personalInfoDetails";
 
 const PersonalInfo: FC = () => {
   return (
-    <div className="flex flex-col">
+    <div
+      className="flex flex-col"
+      itemScope
+      itemType="https://schema.org/Person"
+    >
       <div className="flex items-center gap-2">
-        <p className="text-xl font-bold">{`${personalInfo.en.firstName} ${personalInfo.en.lastName}`}</p>
+        <h1
+          itemProp="name"
+          className="text-xl font-bold"
+        >{`${personalInfo.en.firstName} ${personalInfo.en.lastName}`}</h1>
       </div>
-      <p className="text-gray-500 text-md">{`${personalInfo.fa.job}`}</p>
+      <h2
+        itemProp="jobTitle"
+        className="text-gray-500 text-md"
+      >{`${personalInfo.fa.job}`}</h2>
       <div className="flex flex-col py-5 text-gray-700 gap-2">
-        <p className="ltr text-sm">{contactInfo.fa.phoneNumber}</p>
-        <p className="text-sm">{contactInfo.fa.emailAddress}</p>
+        <p itemProp="telephone" className="ltr text-sm">
+          {contactInfo.fa.phoneNumber}
+        </p>
+        <p itemProp="email" className="text-sm">
+          {contactInfo.fa.emailAddress}
+        </p>
         <a
           href={contactInfo.fa.linkedin}
+          itemProp="url"
           target="_blank"
           className="text-sm text-blue-500"
         >
@@ -23,6 +38,7 @@ const PersonalInfo: FC = () => {
         </a>
         <a
           href={contactInfo.fa.github}
+          itemProp="url"
           target="_blank"
           className="text-sm text-blue-500"
         >
