@@ -150,6 +150,13 @@ export const experiencesInfo: ExperiencesInfo = {
       locationType: "On-site",
       holdingCompanies: [
         {
+          name: "DekaPost (Club)",
+          achievements:
+            "Delivered the initial version of the project with X key features on time and within budget, despite a tight deadline and limited resources.",
+          logo: "dekapost_logo.jpg",
+          workedOn: ["Admin Panel", "Deka webApp"],
+        },
+        {
           name: "GeoMarketing",
           achievements: `Working on pure js and css base on arcGIS esri, This work experience was very interesting and excellent for me because by adding new features to this system, it made it easier for users and I got to know a new document that maybe rarely anyone wants to work with arcgis.`,
           logo: "arcgis.jpg",
